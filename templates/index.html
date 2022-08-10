@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>SOU EU!!!</title>
+    </head>
+     <body>
+        <a href="https://ideianaweb.com.br" target="_blank">Click para ir para a Ideia na Web</a>
+        {% if usuario[2]=="Professor" %}
+            <h2>Bem Vindo Professor {{usuario[1]}}</h2>
+        {% else %}
+            <h2> oi aluno </h2>
+        {% endif %}
+        <hr>
+        {% for aluno in alunos %}
+        <h3>{{aluno}}</h3>
+        {% endfor%}
+        <hr>
+        <h1>{{nome}}</h1>
+        <h2>e-mail@gmail.com</h2>
+        <h3>celular: +55 11 3333-4445</h3>
+    </body>
+</html>
